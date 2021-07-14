@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap" rel="stylesheet"> 
+    <title>Dice Game | One Player</title>
+</head>
+<body>
+    <div class="container--flex wrapper">
+        <section class="container--flex section__title--top">
+            <div class="container--flex container__img--left">
+                <img src="images/leftBars.svg" alt="" class="check leftbars">
+            </div>
+            <div class="container--flex container__top--title check">
+                <img src="images/title.svg" alt="" class="check img__title">
+            </div>
+            <div class="container--flex container__img--right">
+                <img src="images/leftBars.svg" alt="" class="check rightbars">
+            </div>
+        </section>
+        <section class="container--flex section__middle--medium">
+            <div class="container--flex container__img--die">
+                <img src="images/dieOne.svg" alt="" id="img-die">
+            </div>
+            <div class="container--flex container__result--medium">
+                <div class="container--flex container__result--small">
+                    <p class="para--result" id="para-result">0</p>
+                    <p class="para--desc">Die Roll</p>
+                </div>
+                <div class="container--flex container__result--small">
+                    <p class="para--result" id="para-roll">0</p>
+                    <p class="para--desc">Roll Count</p>
+                </div>
+                <div class="container--flex container__result--small">
+                    <p class="para--result" id="para-score">0</p>
+                    <p class="para--desc">Score</p>
+                </div>
+            </div>
+            <div class="container--flex container__middle--text">
+                <p class="para__middle--text" id="middle-text">To play the game, click roll.</p>
+            </div>
+        </section>
+        <section class="container--flex section__bottom--medium">
+            <div class="container--flex container__btn--bottom">
+                <button class="btn--medium btn--roll" id="btn-roll">roll</button>
+                <button class="btn--medium btn--reset" id="btn-reset">reset</button>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
